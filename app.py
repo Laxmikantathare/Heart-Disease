@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 from flask_pymongo import PyMongo
 import numpy as np
+import pandas as pd
 import os
 from dotenv import load_dotenv
 print(np.version.version)
@@ -49,9 +50,9 @@ def prediction():
     Name =request.form['Name']
   
   
-    arr = np.array([[data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13]])
+    arr = pd.array([[data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13]])
     pred = model.predict(arr)
-    app.config["MONGO_URI"] = "mongodb+srv://{username}:{password}@cluster14.pn2qhim.mongodb.net/prediction_data"
+    app.config["MONGO_URI"] = "mongodb+srv://0sherlock014:{password_pred}@cluster14.pn2qhim.mongodb.net/prediction_data"
     db = PyMongo(app).db
 
     db[Name].insert_one({"Age":data1})
@@ -84,7 +85,7 @@ def contact():
     contdata2 = request.form['ema']
     contdata3 = request.form['mes']
 
-    app.config["MONGO_URI"] = "mongodb+srv://{username}:{password}@cluster14.pn2qhim.mongodb.net/contact_data"
+    app.config["MONGO_URI"] = "mongodb+srv://0sherlock014:{password_pred}@cluster14.pn2qhim.mongodb.net/contact_data"
     db = PyMongo(app).db
 
     db[contdata1].insert_one({"Name":contdata1})
