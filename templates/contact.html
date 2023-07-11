@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container-fluid  d-flex justify-content-center mt-2 mb-3">
+  <div class="contactcon p-4 m-5 ">
+    <form autocomplete="off" class="text-center" method='POST',action="{{url_for('contact')}}">
+  <h4 class="mt-2 mb-4"><strong>How Can I help?</strong></h4>
+
+<div class="form-group">
+    <input type="text" class="form-control name  mt-4  shadow-sm bg-white rounded" placeholder="Name" name='nam' />
+  </div>
+
+  <div class="form-group">
+    <input type="email" class="form-control mt-4 mb-4 email shadow-sm bg-white rounded" name='ema' placeholder="Email" />
+  </div>
+ 
+  <div class="form-group">
+    <textarea class="form-control Mess mt-4 mb-4  shadow-sm bg-white rounded" placeholder='Message'name='mes' rows="3"></textarea>
+  </div>
+  <input type="submit" class="contactbtn btn-lg mt-3 mb-2"  value="Send" >
+</form>
+</div> 
+</div>
+
+{% endblock %}

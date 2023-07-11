@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container">
+         <div class="container mt-4 ">
+            <h5>Heart disease is the leading cause of death in India. The term “heart disease” refers to several types of heart conditions. An estimated <mark>17.9 million</mark> people died from Cardiovascular diseases in 2016, representing <mark>31% of all global deaths</mark>. We can greatly reduce risk for heart disease through lifestyle changes.</h5>
+         </div>
+          
+            <div class="container mt-4">
+            <div class="row text-center mb-4">
+
+              <div class="col-sm mb-2">
+                <div class="card" style="width: 100%;">
+                  <a href="{{ url_for('about_heart') }}">
+                  <h5 class="card-title">About Heart disease</h5>
+                    <img src="{{url_for('static', filename='3.jpg')}}" class="card-img">
+                    <div class="card-body">
+                      <p class="card-tex">Learn about heart disease and its related conditions</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+
+              <div class="col-sm mb-2 ">
+                <div class="card" style="width: 100%;">
+                  <a href="{{ url_for('prediction') }}">
+                  <div class="card-body">
+                    <h5 class="card-title">Know Your Risk for Heart disease</h5>
+                    <img src="{{url_for('static', filename='2.jpg')}}" class="card-img">
+                      <p class="card-tex">Find out the chance of your heart disease</p> 
+                    </div>
+                  </a>
+                  </div>
+              </div>
+
+              <div class="col-sm">
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <a href="{{ url_for('prevention') }}">
+                    <h5 class="card-title">Prevent Heart disease</h5>
+                    <img src="{{url_for('static', filename='6.jpg')}}" class="card-img" >
+                      <p class="card-tex">Learn what can you do to lower the risk of heart disease</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        {% endblock %}

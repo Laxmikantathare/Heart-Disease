@@ -1,0 +1,230 @@
+
+.navbar{
+    background-color: #e0e0e0;
+    --bs-navbar-padding-y: 0.6rem;
+    letter-spacing: 0.42px;
+    }
+
+.navbar-brand{
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 2.3rem;
+    color: black;
+   }
+
+.navbar-nav{
+    font-size: 19px;
+    font-weight: 500;
+    }
+
+.navlink{
+    color: black;
+    text-decoration: none;
+    }
+
+.footer{
+    background-color:#e0e0e0!important;;
+}
+.icon1:hover{
+    transform: scale(1.2);
+    }
+.icon2:hover{
+    transform: scale(1.2);
+    }
+.icon3:hover{
+    transform: scale(1.2);
+    }
+.icon1{
+        color: black;
+        }
+.icon2{
+        color: black;
+        }
+.icon3{
+        color: black;
+        }
+
+
+.card{
+    border-radius: 0;
+    }
+
+.card-body{
+    padding:0%;
+    }
+
+.card-title{
+    margin-bottom: 0%;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    background-color: #00695c!important;
+    color: white;
+    font-size: 23px;
+    }
+
+.card-tex{
+    margin-bottom:17px;
+    font-size: 20px;
+    padding: 0px 31px;
+    margin-top: 9px;
+    color: black;
+    }
+
+.card-img{
+    border-radius: 0%;
+    }
+
+
+.parfo{
+    font-size: 18px;
+    font-weight: 500;
+    }
+
+a{
+    text-decoration: none;
+}
+.card:hover{
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.contiabo{
+    background-color: #fff;
+    border: 3px solid hsla(0,0%,50%,.367);
+    border-radius: 15px;
+    max-width: 52rem;
+    font-size: 17px;
+}
+.heart1{
+    width: 100%;
+}
+mark{
+    padding: 0%;
+    background-color: #93ff7e94;
+}
+.navlink:hover {
+    background-size: 100% 0.125rem;
+}
+.navlink{
+    --tw-gradient-to: #00695c;
+      --tw-gradient-from: #038e7d;
+      --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+      --tw-gradient-to: #00695c;
+      background-image: linear-gradient(to right,var(--tw-gradient-stops));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0 0.125rem;
+      position: relative;
+      text-decoration: none;
+      transition: background-size .3s ease;
+      color: black;
+  }
+
+/* ssdnjjsnnnnnnnnnnn */
+  
+.containerpre{
+    width: 86rem;
+      border:3px solid #00695dab;
+      background-color: #f8fafc;
+      border-radius: 20px;
+      box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15), 0 4px 15px 0 rgba(0,0,0,.15);
+  }
+  .fullna{
+      width: 430px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.099);
+      margin-top: 26px;
+  }
+  .fullage{
+      width: 430px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.097);
+      margin-top: 15px;
+  }
+  .form-tex{
+      margin-top: 0.25rem;
+      font-size: .875em;
+  }
+  
+  body{
+      font-size: 16.5px;
+  }
+  .cardpre{
+      border-radius: 5px;
+      box-shadow: 0 3px 9px 0 rgba(0,0,0,.18);
+      border-left: 5px solid #00695ce3;
+  }
+  .cardpre-body{
+      padding:0%;
+  }
+  .cardpre-title{
+      margin-bottom: 0%;
+      padding: 8px;
+      background-color:#e0e0e063;
+      color: black;
+      font-size: 21px;
+  }
+  .cardpre-tex{
+      margin-bottom:8px;
+      font-size: 19px;
+      padding: 10px 35px 13px;
+      color: black;
+  }
+  .cardpre-img{
+      border-radius: 0%;
+  }
+  .contain{
+    width: 85rem;
+  
+  }
+  .btn{
+    color:  #00695c;
+    background-color: white;
+    font-weight: 600;
+    padding: 9px 15px;
+    transition: transform .2s;
+    border: 2px solid;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15), 0 4px 15px 0 rgba(0,0,0,.15);
+  }
+  .btn:hover{
+    color: white;
+    background-color:  #00584d;
+    transform: scale(1.06); 
+  }
+  .attri{
+    width: 85rem;
+    margin-top: 26px;
+      padding: 12px 0px 8px;
+    border-radius: 4px;
+    background-color:  #00695c;
+    color: white;
+  }
+.contactcon{
+    width: 37rem;
+    border: 3px solid #00695dab;
+    background-color: #f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15), 0 4px 15px 0 rgba(0,0,0,.15);
+   
+}
+.contactbtn{
+    color:  #00695c;
+    background-color: white;
+    font-weight: 600;
+    padding: 9px 15px;
+    transition: transform .2s;
+    border: 2px solid;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15), 0 4px 15px 0 rgba(0,0,0,.15);
+    border-radius: 8px;
+}
+.contactbtn:hover{
+    color: white;
+    background-color:  #00584d;
+    transform: scale(1.06); 
+  }
+.name{
+    min-height: 47px;
+}
+.email{
+    min-height: 47px;
+  }
+.mess{
+    min-height: 49px;
+
+}

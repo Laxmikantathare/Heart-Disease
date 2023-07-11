@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/static/CSS/after.css">
+
+  <title>prediction</title>
+</head>
+<body>
+
+    {%if data == 0%}
+      <div id="outerContainer">
+    <div id="container">
+      <div class="item">
+        <img src="{{url_for('static', filename='no.png')}}" />
+      </div>
+      <div class="circle no" style="animation-delay: 0s"></div>
+      <div class="circle no" style="animation-delay: 1s"></div>
+      <div class="circle no" style="animation-delay: 2s"></div>
+      <div class="circle no" style="animation-delay: 3s"></div>
+    </div>
+  </div>
+  <center>
+    <h1>The result is <mark>no</mark>, indicates you have a <mark>lower</mark> risk of heart-related conditions.</h1>
+    <a href='/'>go back to home page</a>
+  </center>
+  </div>
+
+
+    {%else%}
+    <div id="outerContainer">
+        <div id="container">
+          <div class="item">
+            <img src="{{url_for('static', filename='YES.png')}}" />
+          </div>
+          <div class="circle yes" style="animation-delay: 0s"></div>
+          <div class="circle yes" style="animation-delay: 1s"></div>
+          <div class="circle yes" style="animation-delay: 2s"></div>
+          <div class="circle yes" style="animation-delay: 3s"></div>
+        </div>
+        <center>
+            <h1 >The result is <mark>yes</mark>, you have a <mark>higher</mark> risk of heart-related conditions.</h1>
+            <h2>You have to consult a healthcare professional for further evaluation and guidance.</h2>
+            <a href='/'>Back to home page</a>
+          </center>
+          </div>
+        
+    {%endif%}
+
+
+</body>
+
+</html>
+
+
+
+
+
+

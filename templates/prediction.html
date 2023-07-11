@@ -1,0 +1,346 @@
+
+      {% extends "layout.html" %}
+      {% block body %}
+
+      <style>
+    
+      </style>
+      
+      
+      <body>
+        <center>
+      
+          <form method="POST", action="{{url_for('prediction')}}">
+            <div class=" input-group fullna">
+              <div class="input-group-prepend">
+                <span class="input-group-text" >Full Name</span>
+              </div>
+              <input type="text" class="form-control text-center" name="Name" required>
+            </div>
+          
+          
+            <div class=" input-group fullage">
+              <div class="input-group-prepend">
+                <span class="input-group-text" >Age in years</span>
+              </div>
+              <input type="text" name="a" class="form-control text-center" required>
+            </div>
+      
+          <div class="containerpre mt-4 pb-2">
+              <div class="row box">
+                <div class="col-sm mx-3">
+                 
+                  <div class="row align-items-center mt-3">
+                      <div class="col-2">
+                        <label for="inputtext6" class="col-form-label">Sex</label>
+                      </div>
+                      <div class="col-auto ">
+                          <input type="radio" id="male" name="b" value="1"required>
+                          <label for="Male">Male</label>
+                          
+                          <input type="radio" id="female" name="b" value="0"required>
+                          <label for="Female">Female</label>
+                      </div>
+                      <div class="col-auto">
+                        <span id="sexHelpInline" class="form-tex">
+                          describe your gender.
+                        </span>
+                      </div>
+                    </div>
+      
+                   <div class="row align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputnum6" class="col-form-label">ChestPain</label>
+                      </div>
+                      <div class="col-auto ">
+                        <input type="radio" id="html" name="c" value="1"required>
+                        <label for="html">Typical</label>
+                        <input type="radio" id="html" name="c" value="3"required>
+                          <label for="html">Non-Typical</label>
+                       
+                        <div class="col-auto ">
+                           
+                        <input type="radio" id="css" name="c" value="2"required>
+                        <label for="css">Asymptotic</label>
+                          
+                          <input type="radio" id="css" name="c" value="4"required>
+                          <label for="css">Nonanginal</label>
+                        </div>
+                    </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          chest pain type
+                        </span>
+                      </div>
+                    </div>
+      
+                  <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">RestBP</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="d"  class="form-control text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          resting blood pressure in mm Hg
+                        </span>
+                      </div>
+                    </div>
+                 <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Chol</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="e" class="form-control text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          serum cholestoral in mg/dl
+                        </span>
+                      </div>
+                    </div>
+                  <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Fbs</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="f" class="form-control text-center" required>
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          fasting blood sugar > 120 mg/dl
+                        </span>
+                      </div>
+                    </div>
+                  <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">RestECG</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="g" class="form-control text-center text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                         resting electrocardpreiographic results
+                        </span>
+                      </div>
+                    </div>
+      
+                </div>
+                <div class="col-sm mx-5">
+                 
+                  <div class="row g-3 align-items-center mt-3">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">MAXHR</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="h" class="form-control text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          maximum heart rate achieved
+                        </span>
+                      </div>
+                    </div>
+      
+                    <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Exang</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="i" class="form-control text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          exercise induced angina
+                        </span>
+                      </div>
+                    </div><div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">oldpeak</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="j" class="form-control text-center"required >
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          depression induced by exercise to rest
+                        </span>
+                      </div>
+                    </div><div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Slope</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="k" class="form-control text-center"required>
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          the slope of the peak exercise 
+                        </span>
+                      </div>
+                    </div><div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">ca</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="text" name="l" class="form-control text-center"required>
+                      </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          no. of vessels (0-3)
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row g-3 align-items-center mt-2">
+                      <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">thal</label>
+                      </div>
+                      <div class="col-auto ">
+                        <input type="radio" id="html" name="m" value="2"required>
+                        <label for="html">fixed</label>
+                        <input type="radio" id="css" name="m" value="1"required>
+                        <label for="css">normal</label>
+                        <input type="radio" id="css" name="m" value="3"required>
+                        <label for="css">reversable</label>
+                    </div>
+                      <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-tex">
+                          type of defect
+                        </span>
+                      </div>
+                    </div>  
+      
+                  </div > 
+              </div>
+            </div>
+            <input type="submit" class="btn btn-lg mt-4"  value="Predict" >
+          </form>
+         
+      <div class="attri">
+        <h4> Attributes Information </h4> 
+      </div>
+                    
+          <div class="contain mt-1">
+            <div class="row text-center mt-2 mb-4">
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <h5 class="cardpre-title">Chest pain</h5>            
+                    <div class="cardpre-body">
+                      <p class="cardpre-tex">chest pain is discomfort caused when your heart muscle doesn't get enough oxygen-rich blood.</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">          
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Rest BP - Resting blood pressure</h5>              
+                      <p class="cardpre-tex">Ideal resting blood pressure is considered to be between 90/60 mmHg and 120/80 mmHg.</p> 
+                    </div>       
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Chol - serum cholesterol</h5>
+                      <p class="cardpre-tex">A high serum cholesterol level is a concern. ideal serum cholesterol is considered to be less than 150 mg/dL.</p>
+                    </div>
+                  </div>
+              </div>
+      
+          </div>
+      
+            <div class="row text-center mb-4">
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <h5 class="cardpre-title">FBS - fasting blood sugar</h5>            
+                    <div class="cardpre-body">
+                      <p class="cardpre-tex">Person's fasting blood sugar level of 99 mg/dL or lower is normal. (> 120 mg/dl, 1 = true; 0 = false)</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">          
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Rest ECG - Resting electrocardpreiographic</h5>              
+                      <p class="cardpre-tex">0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable left ventricular hypertrophy</p> 
+                    </div>       
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">MaxHR - maximum heart rate </h5>
+                      <p class="cardpre-tex">You can find your max heart rate. To estimate your maximum age-related heart rate, subtract your age from 220.</p>
+                    </div>
+                  </div>
+              </div>
+      
+      
+            </div>
+            <div class="row text-center mb-4">
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <h5 class="cardpre-title">Exang - exercise induced angina</h5>            
+                    <div class="cardpre-body">
+                      <p class="cardpre-tex">In this body is trying to pump more blood, but can’t do so effectively. if yes = 1, if no = 0.</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">          
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Oldpeak</h5>              
+                      <p class="cardpre-tex"> ST depression induced by exercise relative to rest.'ST' relates to positions on the ECG plot.</p> 
+                    </div>       
+                  </div>
+              </div>
+      
+              <div class="col">
+                <div class="cardpre" style="width: 100%;">
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Slope</h5>
+                      <p class="cardpre-tex">The slope of the peak exercise ST segment (Value 1: upsloping, Value 2: flat, Value 3: downsloping)</p>
+                    </div>
+                  </div>
+              </div>
+      
+      
+            </div>
+            <div class="row text-center mb-4">
+              <div class="col-4">
+                <div class="cardpre" style="width: 100%;">
+                  <h5 class="cardpre-title">Ca</h5>            
+                    <div class="cardpre-body">
+                      <p class="cardpre-tex">Number of major vessels (0-3) colored by flourosopy</p>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+      
+              <div class="col-4">
+                <div class="cardpre" style="width: 100%;">          
+                  <div class="cardpre-body">
+                    <h5 class="cardpre-title">Thal - blood disorder thalassemia</h5>              
+                      <p class="cardpre-tex">Normal, Fixed (no blood flow in some part of the heart), Reversable (a blood flow is observed but it is not normal)</p> 
+                    </div>       
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+        
+      </body>
+
+{% endblock %}
