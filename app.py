@@ -17,15 +17,19 @@ app = Flask(__name__)
 
 import inspect
 
-if not hasattr(inspect, 'getargspec'):
-    inspect.getargspec = inspect.getfullargspec
+def my_function(arg1, arg2):
+    pass
 
-from invoke import task
+argspec = inspect.getfullargspec(my_function)
+arguments = argspec.args
 
-@task
+print(arguments)
+
+
+
+@app.route("/")
 def home():
     return render_template("index.html")
-
 
 @app.route("/about_heart")
 def about_heart():
