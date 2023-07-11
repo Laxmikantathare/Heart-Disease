@@ -15,9 +15,17 @@ model = pickle.load(open('heartweb.pkl', 'rb'))
 app = Flask(__name__)
 
 
-@app.route("/")
+import inspect
+
+if not hasattr(inspect, 'getargspec'):
+    inspect.getargspec = inspect.getfullargspec
+
+from invoke import task
+
+@task
 def home():
     return render_template("index.html")
+
 
 @app.route("/about_heart")
 def about_heart():
