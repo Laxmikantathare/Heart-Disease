@@ -4,7 +4,6 @@ from flask_pymongo import PyMongo
 import numpy as np
 import os
 from dotenv import load_dotenv
-print(np.version.version)
 
 load_dotenv() 
 username = os.getenv("username")
@@ -12,17 +11,6 @@ password = os.getenv("password")
 
 model = pickle.load(open('heartweb.pkl', 'rb'))
 app = Flask(__name__)
-
-
-import inspect
-
-def my_function(arg1, arg2):
-    pass
-
-argspec = inspect.getfullargspec(my_function)
-arguments = argspec.args
-
-print(arguments)
 
 
 
