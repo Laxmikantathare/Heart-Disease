@@ -1,0 +1,4 @@
+Flask==2.2.2
+Flask-SQLAlchemy==2.4.0
+Flask-PyMongo==2.3.0
+python-dotenv==1.0.0
