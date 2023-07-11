@@ -4,7 +4,7 @@ from flask_pymongo import PyMongo
 import numpy as np
 import os
 from dotenv import load_dotenv
-
+print(np.version.version)
 
 load_dotenv() 
 username = os.getenv("username")
