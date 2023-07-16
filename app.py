@@ -6,13 +6,10 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv() 
-username = os.getenv("username")
-password = os.getenv("password")
+password_pred = os.getenv("passwor_pred")
 
 model = pickle.load(open('heartweb.pkl', 'rb'))
 app = Flask(__name__)
-
-
 
 @app.route("/")
 def home():
@@ -95,4 +92,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
