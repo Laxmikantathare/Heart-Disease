@@ -1,21 +1,22 @@
 ﻿# Heart Disease Prediction Website ❤️
+
  
-##Description 😀
+## Description 😀
 
 1. This website is built using the Flask web framework. For the front-end flask, Bootstrap is used & Mongodb is used as Database.
-2. Used RandomForestClassifier Machine Learning algorithm for model building which gives ###90.16% accuracy.
+2. Used RandomForestClassifier Machine Learning algorithm for model building which gives 90.16% accuracy.
 3. 
-##Packages Used 👀
+## Packages Used 👀
 1. Flask
 2. Flask-PyMongo
 3. Numpy
 4. Pickle
    
-##Tools Used 🛠
+## Tools Used 🛠
 Client: Flask, Bootstrap
 Database: MongoDB
 language: Python
 
-##Video 🚀
+## Video 🚀
 https://github.com/Laxmikantathare/Heart-Disease/assets/113975228/72005f2f-1be0-4aff-bf28-f20bd17166c2
 
