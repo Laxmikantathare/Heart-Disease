@@ -1,6 +1,4 @@
 ﻿# Heart Disease Prediction Website ❤️
-
- 
 ## Description 😀
 
 1. This website is built using the Flask web framework. For the front-end flask, Bootstrap is used & Mongodb is used as Database.
@@ -13,9 +11,9 @@
 4. Pickle
    
 ## Tools Used 🛠
-language: Python
-Client: Flask, Bootstrap
-Database: MongoDB
+1. language: Python
+2. Client: Flask, Bootstrap
+3. Database: MongoDB
 
 ## Video 🚀
 https://github.com/Laxmikantathare/Heart-Disease/assets/113975228/72005f2f-1be0-4aff-bf28-f20bd17166c2
